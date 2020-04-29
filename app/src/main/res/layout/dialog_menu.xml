@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_dialog_menu_bg"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            tools:visibility="visible"
+            android:visibility="gone"
+            android:textColor="#fff"
+            android:background="#f10"
+            android:id="@+id/bt_stop"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="停止触控"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp" />
+
+        <Button
+            android:layout_marginStart="1dp"
+            android:textColor="#fff"
+            android:background="#666"
+            android:id="@+id/bt_add"
+            android:textSize="15sp"
+            android:text="添加触控点"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp" />
+
+        <Button
+            android:layout_marginStart="1dp"
+            android:textColor="#fff"
+            android:background="#666"
+            android:id="@+id/bt_record"
+            android:textSize="15sp"
+            android:text="录制模式"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp" />
+
+        <Button
+            android:layout_marginStart="1dp"
+            android:textColor="#fff"
+            android:background="#666"
+            android:id="@+id/bt_exit"
+            android:textSize="15sp"
+            android:text="退出助手"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:text="触控点列表"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:background="#ccc"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+</LinearLayout>

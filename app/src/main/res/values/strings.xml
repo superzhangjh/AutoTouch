@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">麻辣鸡触控助手</string>
+    <string name="hint">开启该权限才能正常使用自动触控功能</string>
+</resources>
